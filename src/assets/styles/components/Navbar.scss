@@ -1,0 +1,55 @@
+@use "../variables";
+@use "../mixins";
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1rem 0;
+  border-bottom: 1px solid transparentize(variables.$font-color, 0.8);
+
+  &-content {
+    margin: 0 auto;
+    @include mixins.centralize-content;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-secundary {
+    background-color: variables.$orange-color;
+    a{
+        color: #fff!important;
+        
+        &:hover{
+            color: black!important;
+
+        }
+    }
+  }
+}
+
+.header img {
+  height: fit-content;
+  width: 100px;
+}
+
+.header ul {
+  @include mixins.centralize-content;
+  display: flex;
+
+  li {
+    margin: 0 8px;
+
+    a {
+      text-transform: uppercase;
+      transition: 0.3s;
+      color: variables.$font-color;
+
+      &:hover {
+        color: variables.$orange-color;
+      }
+    }
+  }
+}

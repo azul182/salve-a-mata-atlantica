@@ -1,0 +1,24 @@
+@use '../variables';
+
+.btn {
+
+    border-radius: variables.$btn-radius;
+    padding: .4rem 1rem;
+    border: 1px solid variables.$orange-color;
+    transition: .3s;
+    
+    &:hover {
+        color: variables.$orange-color;
+        background-color: #fff
+    }
+
+    
+    &-outline {
+        color: variables.$orange-color;
+        background-color: transparent;
+        &:hover {
+            color: #fff;
+            background-color: variables.$orange-color;
+        }
+    }
+}
