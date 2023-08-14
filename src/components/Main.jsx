@@ -2,13 +2,13 @@ import "../assets/styles/components/Main.scss";
 import ImgContainer from "./ImgContainer";
 
 const imgs1 = [
-  { name: "satelite", src: "/src/assets/imgs/satelite1.jpg" },
-  { name: "floresta", src: "/src/assets/imgs/floresta.jpeg" },
+  { name: "satelite", src: "/satelite1.jpg" },
+  { name: "floresta", src: "/floresta.jpeg" },
 ];
 
 const imgs2 = [
-  { name: "queimada", src: "/src/assets/imgs/queimada.jpg" },
-  { name: "desmatamento", src: "/src/assets/imgs/desmatamento.jpg" },
+  { name: "queimada", src: "/queimada.jpg" },
+  { name: "desmatamento", src: "/desmatamento.jpg" },
 ];
 
 const Main = () => {
