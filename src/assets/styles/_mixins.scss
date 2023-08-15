@@ -1,0 +1,27 @@
+@use 'variables';
+
+@mixin centralize-content {
+    max-width: variables.$max-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin gradient-border{
+    display: flex;
+    align-items: center;
+
+    &::after{
+      content: '';
+      margin-left: 20px;
+      width: 500px;
+      height: 2px;
+      background: variables.$gradient-color;
+    }
+}
+
+@mixin mobile{
+  @media (max-width:700px) {
+    @content;
+  }
+}

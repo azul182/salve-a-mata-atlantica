@@ -1,0 +1,38 @@
+@use '../mixins';
+@use '../variables';
+
+.form{
+    @include mixins.centralize-content;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    
+
+    label{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    span{
+        margin: 1rem 0;
+    }
+
+    input, textarea{
+        background: white;
+        width: 100%;
+        padding: .8rem;
+        border: none;
+        outline: none;
+        box-shadow: 1px 1px 1px black;
+        resize: none;
+    }
+
+    button{
+        margin-top: 1rem;
+        width: 100%;
+        padding: .8rem;
+        background-color: variables.$orange-color;
+    }
+
+}
