@@ -1,5 +1,6 @@
 import "../assets/styles/components/Main.scss";
 import ImgContainer from "./ImgContainer";
+import Form from "./Form";
 
 const imgs1 = [
   { name: "satelite", src: "/satelite1.jpg" },
@@ -58,20 +59,41 @@ const Main = () => {
         </p>
       </section>
       <section>
-        <smaall className="objective-text">03 - How to Help?</smaall>
+        <small className="objective-text">03 - How to Help?</small>
         <h2>Doações</h2>
-        <p> Seja um parceiro na luta pela preservação da Mata Atlântica. Suas doações nos permitem investir em tecnologia, treinamento de equipes e ações de conscientização para ampliar nosso impacto.</p>
+        <p>
+          {" "}
+          Seja um parceiro na luta pela preservação da Mata Atlântica. Suas
+          doações nos permitem investir em tecnologia, treinamento de equipes e
+          ações de conscientização para ampliar nosso impacto.
+        </p>
         <h2>Voluntariado</h2>
-        <p>Junte-se a nós como voluntário! Participe das nossas campanhas de reflorestamento, ações de conscientização e atividades educativas em comunidades locais.</p>
-        <ImgContainer imgs={imgs3}/>
+        <p>
+          Junte-se a nós como voluntário! Participe das nossas campanhas de
+          reflorestamento, ações de conscientização e atividades educativas em
+          comunidades locais.
+        </p>
+        <ImgContainer imgs={imgs3} />
         <h2>Compartilhe Conhecimento</h2>
-        <p>Educação é a chave para a mudança. Compartilhe nosso site e informações sobre a importância da preservação da Mata Atlântica nas redes sociais para ampliar nossa mensagem.</p>
+        <p>
+          Educação é a chave para a mudança. Compartilhe nosso site e
+          informações sobre a importância da preservação da Mata Atlântica nas
+          redes sociais para ampliar nossa mensagem.
+        </p>
       </section>
-      <section>
-        <small className="objective-text">04 - Contact</small>
-        <h2>Contato</h2>
-        <p>Estamos aqui para ouvir você! Se você tiver perguntas, sugestões ou quiser saber mais sobre nossa organização, entre em contato conosco através do formulário de contato em nosso site ou pelos meios de comunicação listados.</p>
-      </section>
+      <div className="secundary-bg">
+        <section >
+          <small className="objective-text">04 - Contact</small>
+          <h2>Contato</h2>
+          <p>
+            Estamos aqui para ouvir você! Se você tiver perguntas, sugestões ou
+            quiser saber mais sobre nossa organização, entre em contato conosco
+            através do formulário de contato em nosso site ou pelos meios de
+            comunicação listados.
+          </p>
+          <Form />
+        </section>
+      </div>
     </main>
   );
 };

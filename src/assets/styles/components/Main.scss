@@ -4,22 +4,33 @@
 .main {
   @include mixins.centralize-content;
   flex-direction: column;
-  margin: 0 auto;
   align-items: flex-start;
+  width: 100%;
+  max-width: none;
 
   section {
+    margin: 0 auto;
+
     @include mixins.centralize-content;
     flex-direction: column;
     margin: 0 auto;
     margin-top: variables.$def-margin;
     align-items: flex-start;
 
-    > small,
-    > p,
-    > h2,
-    > .img-container {
+    >small,
+    >p,
+    >h2,
+    >.img-container {
       margin-bottom: 2rem;
     }
+  }
+
+  .secundary-bg {
+    background-color: rgb(46, 46, 46);
+    max-width: none;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 120px;
   }
 
   h2 {
@@ -52,11 +63,9 @@
         padding: 1rem;
         color: #fff;
         width: 100%;
-        background: linear-gradient(
-          to bottom,
-          rgba(0, 0, 0, 0.233) 0%,
-          rgba(0, 0, 0, 0.493) 100%
-        );
+        background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.233) 0%,
+            rgba(0, 0, 0, 0.493) 100%);
       }
 
       &:hover {
@@ -72,7 +81,4 @@
     padding-bottom: 2rem;
   }
 
-  .objective-text {
-    padding-top: 2rem;
-  }
 }
