@@ -1,0 +1,18 @@
+@use '../variables';
+
+.sobe-muito{
+    background-color: variables.$orange-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 50%;
+
+    svg{
+        font-size: 20px;
+        color: black;
+    }
+}

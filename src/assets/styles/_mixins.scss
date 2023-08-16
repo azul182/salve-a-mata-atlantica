@@ -17,7 +17,14 @@
       width: 500px;
       height: 2px;
       background: variables.$gradient-color;
+      
+      @include mobile{
+        margin-left: 12px;
+        width: 150px;
+      }
     }
+
+
 }
 
 @mixin mobile{

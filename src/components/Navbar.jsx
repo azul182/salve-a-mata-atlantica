@@ -1,24 +1,42 @@
+import { useEffect, useState } from "react";
 import "../assets/styles/components/Navbar.scss";
 import logo from "/logo.png";
 
 const Navbar = () => {
+  const [scrollClass, setScrollClass] = useState("");
+
+  const handleScroll = () => {
+    if (window.scrollY > 400) {
+      setScrollClass("header-secundary");
+    } else {
+      setScrollClass("");
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     // <header className="header-secundary header">
-    <header className="header">
+    <header className={`${scrollClass} header`}>
       <div className="header-content">
         <img src={logo} alt="" />
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="#">Home</a>
           </li>
           <li>
-            <a href="/">O que fazemos</a>
+            <a href="#about">O que fazemos</a>
           </li>
           <li>
-            <a href="/">Como ajudar</a>
+            <a href="#help">Como ajudar</a>
           </li>
-          <li >
-            <a href="/">Doe</a>
+          <li>
+            <a href="#doe">Doe</a>
           </li>
         </ul>
       </div>

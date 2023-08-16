@@ -3,24 +3,24 @@ import ImgContainer from "./ImgContainer";
 import Form from "./Form";
 
 const imgs1 = [
-  { name: "satelite", src: "/satelite1.jpg" },
-  { name: "floresta", src: "/floresta.jpeg" },
+  { name: "Satélite", src: "/satelite1.jpg" },
+  { name: "Floresta", src: "/floresta.jpeg" },
 ];
 
 const imgs2 = [
-  { name: "queimada", src: "/queimada.jpg" },
-  { name: "desmatamento", src: "/desmatamento.jpg" },
+  { name: "Queimada", src: "/queimada.jpg" },
+  { name: "Desmatamento", src: "/desmatamento.jpg" },
 ];
 
 const imgs3 = [
-  { name: "onça", src: "/onca.jpg" },
-  { name: "floresta", src: "/coracao.jpg" },
+  { name: "Onça", src: "/onca.jpg" },
+  { name: "Floresta", src: "/coracao.jpg" },
 ];
 
 const Main = () => {
   return (
     <main className="main">
-      <section>
+      <section id="about">
         <small>01 - About</small>
         <h2>Sobre Nós</h2>
         <p>
@@ -41,7 +41,7 @@ const Main = () => {
           prevenir danos irreparáveis ao ecossistema.
         </p>
       </section>
-      <section>
+      <section id="objectives">
         <small className="objective-text">02 - Objectives</small>
         <h2>1.Prevenir Queimadas</h2>
         <p>
@@ -58,7 +58,7 @@ const Main = () => {
           atividades e aplicar as medidas legais cabíveis.
         </p>
       </section>
-      <section>
+      <section id="help">
         <small className="objective-text">03 - How to Help?</small>
         <h2>Doações</h2>
         <p>
@@ -82,7 +82,7 @@ const Main = () => {
         </p>
       </section>
       <div className="secundary-bg">
-        <section >
+        <section id="doe">
           <small className="objective-text">04 - Contact</small>
           <h2>Contato</h2>
           <p>

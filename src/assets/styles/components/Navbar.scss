@@ -15,10 +15,21 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    img {
+      transition: .3s;
+      height: fit-content;
+      width: 100px;
+    }
+    @include mixins.mobile{
+      padding: 0 20px;
+    }
   }
 
   &-secundary {
     background-color: variables.$orange-color;
+    img{
+      width: 60px;
+    }
     a{
         color: #fff!important;
         
@@ -28,11 +39,6 @@
         }
     }
   }
-}
-
-.header img {
-  height: fit-content;
-  width: 100px;
 }
 
 .header ul {
@@ -51,5 +57,9 @@
         color: variables.$orange-color;
       }
     }
+  }
+
+  @include mixins.mobile{
+    display: none;
   }
 }
