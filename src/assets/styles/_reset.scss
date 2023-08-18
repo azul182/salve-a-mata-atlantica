@@ -25,3 +25,18 @@
   #root,body,html{
     width: 100%;
   }
+
+  #root{
+    background-color: white;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(34, 34, 34);
+  }
+
+  #frame{
+    margin-bottom: 20px;
+  }

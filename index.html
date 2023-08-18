@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -9,5 +9,19 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <iframe id="frame"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3882.3769789422845!2d-46.51776521277879!3d-23.487332058193516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce600a739545f5%3A0x8fd31dcbebf1eb2e!2sParque%20Ecol%C3%B3gico%20do%20Tiet%C3%AA%20-%20Vila%20Santo%20Henrique%2C%20S%C3%A3o%20Paulo%20-%20SP!5e1!3m2!1spt-BR!2sbr!4v1692322592638!5m2!1spt-BR!2sbr"
+      width="1200"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </body>
+  <script>
+    window.addEventListener("load", () => {
+      document.querySelector("#help").appendChild(document.querySelector("#frame"));
+    });
+  </script>
 </html>
